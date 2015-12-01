@@ -1,6 +1,7 @@
 # advent.zooniverse.org
 
 ```
+gem install bundler
 bundle install
 bundle exec nanoc compile
 bundle exec nanoc view
