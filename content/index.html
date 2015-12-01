@@ -17,25 +17,11 @@ title: Home
   <% (1..24).each do |num| %>
   <div id="d<%= num.to_s %>" class="door">
     <span><%= num.to_s %></span>
-      <% if num > @current_day || @current_month < 12 %>
+    <div class='content'>
       <div class='door_image'>
         <img src="q.png" class="q">
       </div>
-      <% elsif num == @current_day && @current_month == 12 %>
-      <div class='door_image'>
-        <a href="/days/<%= num.to_s %>/?foo=1" class="thickbox" title="Day <%= num.to_s %>">
-         <img src="http://zooniverse-resources.s3.amazonaws.com/advent/<%= num %>.jpg">
-        </a>
-        </div>
-      <% else %>
-      <div class='door_image_open'>
-        <a href="/days/<%= num.to_s %>/?foo=1" class="thickbox" title="Day <%= num.to_s %>">
-        <div class="mask">
-          <img src="http://zooniverse-resources.s3.amazonaws.com/advent/<%= num %>.jpg">
-        </div>
-        </a>
-        </div>
-      <% end %>
+    </div>
   </div>
   <% end %>
   </div>
