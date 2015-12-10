@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   window.now = new Date()
-  // window.now = new Date(2015, 11, 25);
+  //window.now = new Date(2015, 11, 25);
 
   if (now.getMonth() == 11) {
     for (var i = 1; i < 25 && i < now.getDate(); i++) {

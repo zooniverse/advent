@@ -42,12 +42,12 @@ a img {
 
 .door {
 position:absolute;
-border: 1px solid #FFF;
-border-left: 1px dashed #FFF;
+border: 2px solid #088A08;
+border-left: 1px dashed #088A08;
 border-radius:3px;
 z-index:10;
 cursor:pointer;
-color:#FFF;
+color:#088A08;
 font-family:Arial;
 font-size:11px;
 text-transform:uppercase;
